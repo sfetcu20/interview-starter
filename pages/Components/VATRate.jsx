@@ -3,7 +3,7 @@ const VATRate = ({values,setValues})=>{
         const aux=(parseInt(values.PricewithoutVAT) * parseInt(e.target.value)/100 + parseInt(values.PricewithoutVAT)).toFixed(2);
         setValues({...values,VATRate:e.target.value,PricewithVAT:aux})
 }
-    return(
+    return( 
        <div>
         <label htmlFor='rate' className='flex gap-2'>
             <p className='text-glow'><span className='font-size-18 mg-right-5px'>&#8900;</span>VAT Rate:</p>
