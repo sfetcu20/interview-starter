@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
-import {QueryClient, QueryClientProvider,useQuery} from 'react-query'
+import {useQuery} from 'react-query'
 const axios = require('axios').default;
 function PageTwo() {
     const [image,setImage]=useState({})
